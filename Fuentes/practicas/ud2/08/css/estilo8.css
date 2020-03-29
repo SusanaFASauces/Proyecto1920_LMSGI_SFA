@@ -1,0 +1,10 @@
+/*
+ Autor.- Susana Fabián Antón
+ Fecha.- 14/11/19
+ Ejercicio.- UD2_08
+ Documento.- estilo8.css
+*/
+#abuelo:before{content:"Estilo 8";}
+#abuelo>div{
+	border:1px solid red;
+}

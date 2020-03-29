@@ -1,0 +1,71 @@
+﻿/*
+Autor.- Susana Fabián Antón
+Fecha.- 20/11/19
+Ejercicio.- UD2_09
+Documento.- estilo.css
+*/
+body{
+	background-color:orange;
+	background-image:url("../images/calabaza.png");
+	background-size:125px;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	background-attachment:fixed;
+}
+.caja1{
+	width:180px;
+	height:180px;
+	margin:5px;
+	display:inline-block;
+	
+	border:10px dotted green;
+	background-color:yellowgreen;
+	background-image:url("../images/kiwi.png");
+	background-size:120px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.caja1:hover{
+	background-size:60px;
+	background-repeat:repeat;
+	background-position:center;
+}
+.caja2{
+	width:180px;
+	height:180px;
+	margin:5px;
+	display:inline-block;
+	
+	border:10px double yellowgreen;
+	background-color:green;
+	background-image:url("../images/apple.png");
+	background-size:60px;
+	background-repeat:repeat;
+	background-position:center;
+}
+.caja2:hover{
+	border-color:yellowgreen;
+	background-color:yellow;
+	background-size:180px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.caja3{
+	width:180px;
+	height:180px;
+	margin:5px;
+	display:inline-block;
+	
+	border:10px outset green;
+	background-color:transparent;
+	background-image:url("../images/melon.png");
+	background-size:60px;
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+.caja3:hover{
+	background:url("../images/melon.png") no-repeat left top,
+	url("../images/kiwi.png") no-repeat right top,
+	url("../images/apple.png") no-repeat right bottom;
+	background-size:60px;
+}

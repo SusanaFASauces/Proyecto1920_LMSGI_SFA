@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 21/01/2020
+ Documento.- 06.xml
+-->
+<!DOCTYPE hechos [
+	<!ELEMENT hechos (descripcion+)>
+	
+	<!ELEMENT descripcion (texto, fecha)>
+	
+	<!ELEMENT texto (#PCDATA)>
+	<!ELEMENT fecha EMPTY>
+	
+	<!ATTLIST mail xmlns:xsi CDATA #IMPLIED>
+	<!ATTLIST mail xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+	
+	<!ATTLIST fecha dia CDATA #REQUIRED>
+	<!ATTLIST fecha mes CDATA #REQUIRED>
+	<!ATTLIST fecha anyo CDATA #REQUIRED>
+]>
+
+<hechos>
+	<descripcion>
+		<texto>Se funda Youtube</texto>
+		<fecha dia="15" mes="2" anyo="2005"/>
+	</descripcion>
+	<descripcion>
+		<texto>Se funda Google</texto>
+		<fecha dia="4" mes="9" anyo="1998"/>
+	</descripcion>
+	<descripcion>
+		<texto>Se funda Facebook</texto>
+		<fecha dia="4" mes="2" anyo="2004"/>
+	</descripcion>
+</hechos>

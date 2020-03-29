@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Susana Fabián Antón</title>
+		<link>http://192.168.2.119</link>
+		<description>Sitio web de Susana Fabián Antón de LMSGI</description>
+		<item>
+			<title>CSS 17</title>
+			<link>http://192.168.2.119/var/ww/html/1920_LMGSI_SFA/ud2/17/index.html</link>
+			<description></description>
+		</item>
+		<item>
+			<title>CSS 16</title>
+			<link></link>
+			<description></description>
+		</item>
+		<item>
+			<title>CSS 15</title>
+			<link></link>
+			<description></description>
+		</item>
+			<title>CSS 14</title>
+			<link></link>
+			<description></description>
+		</item>
+		<item>
+			<title>CSS 13</title>
+			<link></link>
+			<description></description>
+		</item>
+	</channel>
+</rss>

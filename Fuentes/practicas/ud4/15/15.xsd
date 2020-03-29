@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 13/02/2020
+ Documento.- 15.xsd
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="mapaEstelar">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="constelacion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre" type="xs:string"/>
+							<xs:element name="superficie" type="xs:float"/>
+							<xs:element name="estrellas">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="asterismo" type="xs:integer"/>
+										<xs:element name="masBrillante">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="luminosidad" type="xs:integer"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="numEstrellas" type="xs:integer"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="objetos">
+								<xs:complexType>
+									<xs:sequence>
+										<!-- Elementos vacios complejos, con atributos de tipo booleano -->
+										<xs:element name="cumulos">
+											<xs:complexType>
+												<xs:attribute name="tiene" type="xs:boolean" default="false"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="nebulosas">
+											<xs:complexType>
+												<xs:attribute name="tiene" type="xs:boolean" default="false"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="galaxias">
+											<xs:complexType>
+												<xs:attribute name="tiene" type="xs:boolean" default="false"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="cuasares">
+											<xs:complexType>
+												<xs:attribute name="tiene" type="xs:boolean" default="false"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="lluviasMeteoros">
+											<xs:complexType>
+												<xs:attribute name="tiene" type="xs:boolean" default="false"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="observacion">
+								<xs:complexType>
+									<xs:sequence>
+										<!-- El elemento hemisferio solo puede tomar los valores "Norte" o "Sur" -->
+										<xs:element name="hemisferio">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="Norte"/>
+													<xs:enumeration value="Sur"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<!-- cambiar a tipo gMonth -->
+										<xs:element name="mes" type="xs:string"/>
+										<!-- cambiar a tipo hora -->
+										<xs:element name="hora" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="otrosDatos">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="informacion" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<!-- El atributo "nomLatin" es obligatorio -->
+						<xs:attribute name="nomLatin" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+/*
+ Autor.- Susana Fabián Antón
+ Fecha.- 14/11/19
+ Ejercicio.- UD2_08
+ Documento.- estilo9.css
+*/
+#abuelo:before{content:"Estilo 9";}
+.padre~p{
+	border:1px solid red;
+}
+a[title]{
+	color:#009CDE;
+}
+a[title="Titulo hijo 1"]{
+	background-color:red;
+}
+a[title~="hijo"]{
+	font-size:2em;
+}

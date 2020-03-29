@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 13/02/2020
+ Documento.- 15.xml
+-->
+<mapaEstelar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schemas/15.xsd">
+	<!-- El atributo "nomLatin" es obligatorio -->
+	<constelacion nomLatin="Ursa Maior">
+		<nombre>Osa Mayor</nombre>
+		<superficie>1279.7</superficie>
+		<estrellas numEstrellas="209">
+			<asterismo>7</asterismo>
+			<masBrillante luminosidad="108">Alioth</masBrillante>
+		</estrellas>
+		<objetos>
+			<!-- Elementos vacios con atributos de tipo booleano -->
+			<cumulos tiene="false"/>
+			<nebulosas tiene="true"/>
+			<galaxias tiene="true"/>
+			<cuasares tiene="false"/>
+			<lluviasMeteoros tiene="true"/>
+		</objetos>
+		<observacion>
+			<!-- El elemento hemisferio solo puede tomar los valores "Norte" o "Sur" -->
+			<hemisferio>Norte</hemisferio>
+			<!-- cambiar tipo a gMonth -->
+			<mes>Abril</mes>
+			<!-- cambiar tipo a time -->
+			<hora>21:00</hora>
+		</observacion>
+		<otrosDatos>
+			<informacion>
+				En esta constelación podemos observar Mizar y Alcor,
+				que forman una estrella doble óptica, de las más 
+				reconocidas del cielo nocturno
+			</informacion>
+		</otrosDatos>
+	</constelacion>
+</mapaEstelar>

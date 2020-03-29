@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 17/10/19
+ Ejercicio.- UD2_03
+ Documento.- index.html
+-->
+<html lang="es">
+	<head>
+		<title>HTML 03 Susana Fabián Antón</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Susana Fabián Antón">
+        <meta name="application-name" content="HTML 03">
+		<meta name="description" content="Introducción a HTML5">
+        <meta name="robots" content="index, follow">
+		
+		<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+		<style>
+			html{ background-color: beige;}
+				
+			table{ width:100%;
+				background-color: black;}
+				
+			th{ background-color: white;}
+			
+			td{ text-align: center;
+				background-color: white;}
+			
+			mark{ background-color: white;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center"><a id="inicio">HORARIO LECTIVO DEL CURSO 2019-20</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#horario">HORARIO</a></li>
+				<li><a href="#edd">EDD</a></li>
+				<li><a href="#fol">FOL</a></li>
+				<li><a href="#prog">PROG</a></li>
+				<li><a href="#sinf">SINF</a></li>
+				<li><a href="#lmsgi">LMSGI</a></li>
+				<li><a href="#bbdd">BBDD</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<header>
+					<h2 style="text-align:center">CICLO FORMATIVO Desarollo de Aplicaciones Web</h2>
+				</header>
+				<article>
+					<header>
+						<h3><a id="horario">Curso: 1º Grupo: DAW1</a></h3>
+					</header>
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>De 8:30<br>Hasta 9:20</th>
+								<td style="background-color:lightcoral"><abbr title="Entornos de Desarollo"><b>EDD</b></abbr><br><i>DRIF</i></td>
+								<td style="background-color:lightskyblue" rowspan="2"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightskyblue" rowspan="2"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightgreen" rowspan="2"><abbr title="Sistemas Informáticos"><b>SINF</b></abbr><br><i>GBIF</i></td>
+								<td style="background-color:lightcoral"><abbr title="Entornos de Desarollo"><b>EDD</b></abbr><br><i>DRIF</i></td>
+							</tr>
+							<tr>
+								<th>De 9:20<br>Hasta 10:10</th>
+								<td style="background-color:lightsalmon"><abbr title="Formación y Orientación Laboral"><b>FOL</b></abbr><br><i>CAFO</i></td>
+								<td style="background-color:plum" rowspan="2"><abbr title="Bases de Datos"><b>BBDD</b></abbr><br><i>MELI</i></td>
+							</tr>
+							<tr>
+								<th>De 10:10<br>Hasta 11:00</th>
+								<td style="background-color:lightskyblue"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:moccasin"><abbr title="Lenguajes de Marcas y Sistemas de Gestión Informáticos"><mark><b>LMSGI</b></mark></abbr><br><i>ARIF</i></td>
+								<td style="background-color:lightcoral"><abbr title="Entornos de Desarollo"><b>EDD</b></abbr><br><i>DRIF</i></td>
+								<td style="background-color:lightskyblue"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+							</tr>
+							<tr>
+								<th>De 11:00<br>Hasta 11:25</th>
+								<th colspan="5" >RECREO</th>
+							</tr>
+							<tr>
+								<th>De 11:25<br>Hasta 12:15</th>
+								<td style="background-color:lightskyblue"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:moccasin"><abbr title="Lenguajes de Marcas y Sistemas de Gestión Informáticos"><mark><b>LMSGI</b></mark></abbr><br><i>ARIF</i></td>
+								<td style="background-color:lightsalmon"><abbr title="Formación y Orientación Laboral"><b>FOL</b></abbr><br><i>CAFO</i></td>
+								<td style="background-color:lightskyblue"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightsalmon"><abbr title="Formación y Orientación Laboral"><b>FOL</b></abbr><br><i>CAFO</i></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+								<td style="background-color:lightgreen" rowspan="2"><abbr title="Sistemas Informáticos"><b>SINF</b></abbr><br><i>GBIF</i></td>
+								<td style="background-color:plum" rowspan="2"><abbr title="Bases de Datos"><b>BBDD</b></abbr><br><i>MELI</i></td>
+								<td style="background-color:plum" rowspan="2"><abbr title="Bases de Datos"><b>BBDD</b></abbr><br><i>MELI</i></td>
+								<td style="background-color:moccasin" rowspan="2"><abbr title="Lenguajes de Marcas y Sistemas de Gestión Informáticos"><mark><b>LMSGI</b></mark></abbr><br><i>ARIF</i></td>
+								<td style="background-color:lightgreen" rowspan="2"><abbr title="Sistemas Informáticos"><b>SINF</b></abbr><br><i>GBIF</i></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<footer>
+						<strong>TUTOR:</strong> D. AMBROSIO CASADO FERNÁNDEZ
+					</footer>
+				</article>
+				<hr>
+				<article>
+					<header>
+						<h3><a id="edd">Entornos de Desarollo</a></h3>
+					</header>
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>De 8:30<br>Hasta 9:20</th>
+								<td style="background-color:lightcoral"><abbr title="Entornos de Desarollo"><b>EDD</b></abbr><br><i>DRIF</i></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="2"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightcoral"><abbr title="Entornos de Desarollo"><b>EDD</b></abbr><br><i>DRIF</i></td>
+							</tr>
+							<tr>
+								<th>De 9:20<br>Hasta 10:10</th>
+								<td style="background-color:lightgray" rowspan="2"></td>
+								<td style="background-color:lightgray" rowspan="2"></td>
+							</tr>
+							<tr>
+								<th>De 10:10<br>Hasta 11:00</th>
+								<td style="background-color:lightcoral"><abbr title="Entornos de Desarollo"><b>EDD</b></abbr><br><i>DRIF</i></td>
+							</tr>
+							<tr>
+								<th>De 11:00<br>Hasta 11:25</th>
+								<th colspan="5" >RECREO</th>
+							</tr>
+							<tr>
+								<th>De 11:25<br>Hasta 12:15</th>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+						</tbody>
+					</table>
+					<footer>
+						<address>Profesor: David Ruiz Castrillo</address>
+					</footer>
+				</article>
+				<br>
+				<article>
+					<header>
+						<h3><a id="fol">Formación y Orientación Laboral</a></h3>
+					</header>
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>De 8:30<br>Hasta 9:20</th>
+								<td style="background-color:lightgray" rowspan="1"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 9:20<br>Hasta 10:10</th>
+								<td style="background-color:lightsalmon"><abbr title="Formación y Orientación Laboral"><b>FOL</b></abbr><br><i>CAFO</i></td>
+							</tr>
+							<tr>
+								<th>De 10:10<br>Hasta 11:00</th>
+								<td style="background-color:lightgray" rowspan="1"></td>
+							</tr>
+							<tr>
+								<th>De 11:00<br>Hasta 11:25</th>
+								<th colspan="5" >RECREO</th>
+							</tr>
+							<tr>
+								<th>De 11:25<br>Hasta 12:15</th>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightsalmon"><abbr title="Formación y Orientación Laboral"><b>FOL</b></abbr><br><i>CAFO</i></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightsalmon"><abbr title="Formación y Orientación Laboral"><b>FOL</b></abbr><br><i>CAFO</i></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+								<td style="background-color:lightgray" rowspan="2"></td>
+								<td style="background-color:lightgray" rowspan="2"></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+						</tbody>
+					</table>
+					<footer>
+						<address>Profesora: María del Cielo Alejo Mulas</address>
+					</footer>
+				</article>
+				<br>
+				<article>
+					<header>
+						<h3><a id="prog">Programación</a></h3>
+					</header>
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>De 8:30<br>Hasta 9:20</th>
+								<td style="background-color:lightgray" rowspan="2"></td>
+								<td style="background-color:lightskyblue" rowspan="2"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightskyblue" rowspan="2"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightgray" rowspan="2">
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 9:20<br>Hasta 10:10</th>
+							</tr>
+							<tr>
+								<th>De 10:10<br>Hasta 11:00</th>
+								<td style="background-color:lightskyblue" rowspan="1"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightgray" rowspan="1"></td>
+								<td style="background-color:lightgray" rowspan="1"></td>
+								<td style="background-color:lightskyblue" rowspan="1"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+							</tr>
+							<tr>
+								<th>De 11:00<br>Hasta 11:25</th>
+								<th colspan="5" >RECREO</th>
+							</tr>
+							<tr>
+								<th>De 11:25<br>Hasta 12:15</th>
+								<td style="background-color:lightskyblue" rowspan="1"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightskyblue" rowspan="1"><abbr title="Programación"><b>PROG</b></abbr><br><i>AMB</i></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+								<td style="background-color:lightgray" rowspan="2"></td>
+								<td style="background-color:lightgray" rowspan="2"></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+						</tbody>
+					</table>
+					<footer>
+						<address>Profesor: Ambrosio Casado Fernández</address>
+					</footer>
+				</article>
+				<br>
+				<article>
+					<header>
+						<h3><a id="sinf">Sistemas Informáticos</a></h3>
+					</header>
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>De 8:30<br>Hasta 9:20</th>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgreen" rowspan="2"><abbr title="Sistemas Informáticos"><b>SINF</b></abbr><br><i>GBIF</i></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 9:20<br>Hasta 10:10</th>
+							</tr>
+							<tr>
+								<th>De 10:10<br>Hasta 11:00</th>
+								<td style="background-color:lightgray" rowspan="1"></td>
+							</tr>
+							<tr>
+								<th>De 11:00<br>Hasta 11:25</th>
+								<th colspan="5" >RECREO</th>
+							</tr>
+							<tr>
+								<th>De 11:25<br>Hasta 12:15</th>
+								<td style="background-color:lightgray" rowspan="1"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="1"></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+								<td style="background-color:lightgreen" rowspan="2"><abbr title="Sistemas Informáticos"><b>SINF</b></abbr><br><i>GBIF</i></td>
+								<td style="background-color:lightgreen" rowspan="2"><abbr title="Sistemas Informáticos"><b>SINF</b></abbr><br><i>GBIF</i></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+						</tbody>
+					</table>
+					<footer>
+						<address>Profesor: Gustavo Bartolome del Caz</address>
+					</footer>
+				</article>
+				<br>
+				<article>
+					<header>
+						<h3><a id="lmsgi"><mark>Lenguajes de Marcas</mark></a></h3>
+					</header>
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>De 8:30<br>Hasta 9:20</th>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="2"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 9:20<br>Hasta 10:10</th>
+							</tr>
+							<tr>
+								<th>De 10:10<br>Hasta 11:00</th>
+								<td style="background-color:moccasin" rowspan="1"><abbr title="Lenguajes de Marcas y Sistemas de Gestión Informáticos"><b>LMSGI</b></abbr><br><i>ARIF</i></td>
+							</tr>
+							<tr>
+								<th>De 11:00<br>Hasta 11:25</th>
+								<th colspan="5" >RECREO</th>
+							</tr>
+							<tr>
+								<th>De 11:25<br>Hasta 12:15</th>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:moccasin" rowspan="1"><abbr title="Lenguajes de Marcas y Sistemas de Gestión Informáticos"><b>LMSGI</b></abbr><br><i>ARIF</i></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="1"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+								<td style="background-color:lightgray" rowspan="2"></td>
+								<td style="background-color:moccasin" rowspan="2"><abbr title="Lenguajes de Marcas y Sistemas de Gestión Informáticos"><b>LMSGI</b></abbr><br><i>ARIF</i></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+						</tbody>
+					</table>
+					<footer>
+						<address>Profesora: Amor Rodriguez Navarro</address>
+					</footer>
+				</article>
+				<br>
+				<article>
+					<header>
+						<h3><a id="bbdd">Bases de Datos</a></h3>
+					</header>
+					<table>
+						<thead>
+							<tr>
+								<th>Horas</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>De 8:30<br>Hasta 9:20</th>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="1"></td>
+							</tr>
+							<tr> 
+								<th>De 9:20<br>Hasta 10:10</th>
+								<td style="background-color:plum" rowspan="2"><abbr title="Bases de Datos"><b>BBDD</b></abbr><br><i>MELI</i></td>
+							</tr>
+							<tr>
+								<th>De 10:10<br>Hasta 11:00</th>
+							</tr>
+							<tr>
+								<th>De 11:00<br>Hasta 11:25</th>
+								<th colspan="5" >RECREO</th>
+							</tr>
+							<tr>
+								<th>De 11:25<br>Hasta 12:15</th>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="1"></td>
+								<td style="background-color:lightgray" rowspan="1"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+								<td style="background-color:lightgray" rowspan="3"></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+								<td style="background-color:plum" rowspan="2"><abbr title="Bases de Datos"><b>BBDD</b></abbr><br><i>MELI</i></td>
+								<td style="background-color:plum" rowspan="2"><abbr title="Bases de Datos"><b>BBDD</b></abbr><br><i>MELI</i></td>
+							</tr>
+							<tr>
+								<th>De 12:15<br>Hasta 13:05</th>
+							</tr>
+						</tbody>
+					</table>
+					<footer>
+						<address>Profesora: Hermelinda Ramos Osorio</address>
+					</footer>
+				</article>
+			</section>
+		</main>
+		<footer>
+		<p style="text-align:right"><a href="#inicio"><i>Volver al Incicio</i></a></p>
+		<p> 2019-20 IES LOS SAUCES.©Todos los Derechos Reservados. <b>Susana Fabián Antón</b></p>
+		</footer>
+	</body>
+</html>

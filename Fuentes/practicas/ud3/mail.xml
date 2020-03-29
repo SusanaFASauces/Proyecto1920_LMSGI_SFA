@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+	<mail fecha="14/01/2020">
+		<remitente>marodriguezn@educa.jcyl.es</remitente>
+		<destinatario>
+			<correo>eduardo@educa.jcyl.es</correo>
+			<correo>maria@educa.jcyl.es</correo>
+		</destinatario>
+		<asunto></asunto>
+		<mensaje></mensaje>
+		<adjuntos>
+			<image tpe="image/png">foto1.png</image>
+			<image tpe="image/png">foto2.png</image>
+			<image tpe="image/png">foto3.png</image>
+		</adjuntos>
+	</mail>

@@ -1,0 +1,12 @@
+﻿/*
+Autor.- Susana Fabián Antón
+Fecha.- 14/11/19
+Ejercicio.- UD2_08
+Documento.- reset.css
+*/
+div,p{
+	border:1px solid gray;
+	margin:10px;
+}
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 20/01/2020
+ Documento.- 05.xml
+-->
+<!DOCTYPE mundo [
+	<!ELEMENT mundo (continente+)>
+	
+	<!ELEMENT continente (nCont?, pais*)>
+	
+	<!ELEMENT nCont (#PCDATA)>
+	<!ELEMENT pais (#PCDATA)>
+	
+	<!ATTLIST mundo xmlns:xsi CDATA #IMPLIED>
+	<!ATTLIST mundo xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+	
+	<!ATTLIST pais capital CDATA #REQUIRED>
+]>
+
+<mundo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schemas/05.xsd">
+	<continente>
+		<nCont>Europa</nCont>
+		<pais capital="Berlin">Alemania</pais>
+	</continente>
+	<continente>
+		<nCont>América</nCont>
+		<pais capital="Buenos Aires">Argentina</pais>
+		<pais capital="Nassau">Bahamas</pais>
+	</continente>
+	<continente>
+		<nCont>Asia</nCont>
+		<pais capital="Kabul">Afganistán</pais>
+		<pais capital="Riad">Arabia Saudita</pais>
+	</continente>
+	<continente>
+		<nCont>África</nCont>
+	</continente>
+</mundo>

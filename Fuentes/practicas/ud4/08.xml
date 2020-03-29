@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 23/01/2020
+ Documento.- 08.xml
+-->
+<!DOCTYPE company [
+	<!ELEMENT employee (firstName, lastName, contactNo+, email*, address)>
+	<!ELEMENT firstName (#PCDATA)>
+	<!ELEMENT lastName (#PCDATA)>
+	<!ELEMENT contactNo (#PCDATA)>
+	<!ELEMENT email (#PCDATA)>
+	<!ELEMENT address (city, state, zip)>
+	<!ELEMENT city (#PCDATA)>
+	<!ELEMENT state (#PCDATA)>
+	<!ELEMENT zip (#PCDATA)>
+	<!ELEMENT company (employee*)>
+]>
+
+<company>
+	<employee>
+		<firstName>Susana</firstName>
+		<lastName>Fabián</lastName>
+		<contactNo>999999999</contactNo>
+		<email>example@gmail.com</email>
+		<address>
+			<city>Benavente</city>
+			<state>Zamora</state>
+			<zip>49600</zip>
+		</address>
+	</employee>
+</company>

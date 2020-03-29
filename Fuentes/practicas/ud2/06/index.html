@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 03/11/19
+ Ejercicio.- UD2_06
+ Documento.- index.html
+-->
+<html lang="es">
+	<head>
+		<title>HTML 06 Susana Fabián Antón</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Susana Fabián Antón">
+        <meta name="application-name" content="HTML 06">
+		<meta name="description" content="Introducción a HTML5">
+        <meta name="robots" content="index, follow">
+		
+		<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center">MULTIMEDIA: Constelaciones</h1>
+		</header>
+		<main>
+			<section>
+				<h2>Imágenes</h2>
+				<img src="media/images/mapa_estelar.gif" alt="Mapa estelar que muestra los dibujos de los mitos asociados a las constelaciones." height="300" />
+				<img src="media/images/osa_mayor.png" alt="Asterismo de la Osa Mayor." height="300" />
+				<img src="media/images/galaxia_de_cigarro.jpg" alt="Imágen de la Galaxia M82" height="300" />
+			</section>
+			<section>
+<!-- El atributo autoplay no funciona en algunos navegadores -->
+				<h2>Vídeos</h2>
+				<div>
+					<video autoplay loop muted width="400">
+						<source src="media/video/constelaciones.webm" type="video/webm">
+					</video>
+				</div>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/tYeXkiIjky8?start=121" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div>
+					<video controls width="800">
+						<source src="media/video/guia_constelaciones.ogv" type="video/ogg">
+					</video>
+				</div>
+			</section>
+			<section>
+				<h2>Audio</h2>
+				<audio controls>
+					<source src="media/audio/estrella_polar.mp3" type="audio/mpeg">
+				</audio>
+				<audio controls>
+					<source src="media/audio/reconocer_cons.wav" type="audio/wav">
+				</audio>
+				<audio controls>
+					<source src="media/audio/explicacion_cons.ogg" type="audio/ogg">
+				</audio>
+			</section>
+		</main>
+		<footer>
+		<p> 2019-20 IES LOS SAUCES. © Todos los Derechos Reservados. <b>Susana Fabián Antón</b></p>
+		</footer>
+	</body>
+</html>

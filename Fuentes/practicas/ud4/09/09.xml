@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="estilo.css"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 23/01/2020
+ Documento.- 08.xml
+--> 
+<!DOCTYPE ejemplos [
+	<!ELEMENT lenguaje (nLenguaje,codigo)>
+	<!ELEMENT nLenguaje (#PCDATA)>
+	<!ELEMENT codigo (#PCDATA)>
+	<!ELEMENT ejemplos (lenguaje*)>
+]>
+
+<ejemplos>
+	<lenguaje>
+		<nLenguaje>Java</nLenguaje>
+		<codigo>
+			<![CDATA[
+				public class holaMundo{
+					public static void main(String[] args){
+						System.out.println("Hola Mundo");
+					}
+				}
+			]]>
+		</codigo>
+	</lenguaje>
+	<lenguaje>
+		<nLenguaje>HTML</nLenguaje>
+		<codigo>
+			<![CDATA[
+				<!DOCTYPE html>
+				<html>
+					<body>
+						<h1>Mi primer encabezado</h1>
+						<p>Mi primer párrafo</p>
+					</body>
+				</html>
+			]]>
+		</codigo>
+	</lenguaje>
+</ejemplos>

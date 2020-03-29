@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Autor.- Amor Rodriguez Navarro
+ Fecha.- 18/03/2020
+ Documento.- 04.xml
+-->
+<actividades xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="04.xsd">
+	<!-- 
+		Expresiones XPath
+		
+		1.- /actividades/actividad[@nivel="infantil"]/*/text()
+		2.- /actividades/actividad[@nivel="adultos"]/titulo/text()
+		3.- /actividades/actividad/titulo[../sesiones/sesion/sesiones_semana="2"]/text()
+		    SOLUCIÓN AMOR: //sesiones[sesiones_semana='2']/parent::node()/titulo
+		4.- count(/actividades/actividad)
+		5.- string(count(/actividades/actividad))
+		6.- string(count(//actividad[@nivel="infantil"]))
+		7.- sum(//sesiones_semana[../../../@nivel="adultos"])
+		8.- /actividades/actividad[codigo="A06"]/*
+	-->
+	<actividad nivel="infantil">
+		<codigo>A01</codigo>
+		<titulo>Al agua patos</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="suave">
+			<!-- 
+			 Me he tomado la libertad de modificar el xml para adaptarlo a las especifiaciones del documento 'ud5-04.pdf',
+			 añadiendo el elemento 'sesion', dentro del elemento 'sesiones'
+			-->
+			<sesion>
+				<minutos_sesion>45</minutos_sesion>
+				<sesiones_semana>3</sesiones_semana>
+			</sesion>
+		</sesiones>
+	</actividad>
+
+	<actividad nivel="adultos">
+		<codigo>A02</codigo>
+		<titulo>Spinning y agua</titulo>
+		<fecha_inicio>2017-01-08</fecha_inicio>
+		<sesiones intensidad="fuerte"> 
+			<sesion>
+				<minutos_sesion>45</minutos_sesion>
+				<sesiones_semana>3</sesiones_semana>
+			</sesion>
+		</sesiones>
+	</actividad>
+
+	<actividad nivel="adultos">
+		<codigo>A03</codigo>
+		<titulo>Spinning en el agua</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="moderada">
+			<sesion>
+				<minutos_sesion>60</minutos_sesion>
+				<sesiones_semana>2</sesiones_semana>
+			</sesion>
+		</sesiones>
+	</actividad>
+
+	<actividad nivel="infantil">
+		<codigo>A04</codigo>
+		<titulo>Socorrismo</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="moderada"> 
+			<sesion>
+				<minutos_sesion>45</minutos_sesion>
+				<sesiones_semana>2</sesiones_semana>
+			</sesion>
+		</sesiones>
+	</actividad>
+
+	<actividad nivel="infantil">
+		<codigo>A05</codigo>
+		<titulo>Perfeccionamiento en el agua</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="moderada">
+			<sesion>
+				<minutos_sesion>45</minutos_sesion>
+				<sesiones_semana>2</sesiones_semana>
+			</sesion>
+		</sesiones>
+	</actividad>
+	
+	<actividad nivel="adultos">
+		<codigo>A06</codigo>
+		<titulo>Aprender a nadar</titulo>
+		<fecha_inicio>2017-02-15</fecha_inicio>
+		<sesiones intensidad="suave">
+			<sesion>
+				<minutos_sesion>30</minutos_sesion>
+				<sesiones_semana>2</sesiones_semana>
+			</sesion>
+		</sesiones>
+	</actividad>	
+</actividades>

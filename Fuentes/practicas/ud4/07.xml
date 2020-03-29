@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 28/01/2020
+ Documento.- 07.xml
+--> 
+<!DOCTYPE horario [
+	<!ELEMENT dia (asignatura+)>
+	<!ELEMENT asignatura (#PCDATA)>
+	<!ATTLIST dia nDia CDATA #REQUIRED>
+	<!ATTLIST asignatura codAsig CDATA #REQUIRED>
+	<!ATTLIST asignatura horaInicio CDATA #REQUIRED>
+	<!ELEMENT horario (dia+)>
+]>
+
+<horario>
+	<dia nDia="Lunes">
+		<asignatura codAsig="EDD" horaInicio="8:30">Entornos de Desarrollo</asignatura>
+		<asignatura codAsig="FOL" horaInicio="9:20">Formación y Orientación Laboral</asignatura>
+		<asignatura codAsig="PROG" horaInicio="10:10">Programación</asignatura>
+		<asignatura codAsig="SINF" horaInicio="12:15">Sistemas Informáticos</asignatura>
+	</dia>
+	<dia nDia="Martes">
+		<asignatura codAsig="PROG" horaInicio="8:30">Programación</asignatura>
+		<asignatura codAsig="LMSGI" horaInicio="10:10">Lenguajes de Marcas</asignatura>
+		<asignatura codAsig="BBDD" horaInicio="12:15">Bases de Datos</asignatura>
+	</dia>
+	<dia nDia="Miércoles">
+		<asignatura codAsig="PROG" horaInicio="8:30">Programación</asignatura>
+		<asignatura codAsig="EDD" horaInicio="10:10">Entornos de Desarrollo</asignatura>
+		<asignatura codAsig="FOL" horaInicio="11:25">Formación y Orientación Laboral</asignatura>
+		<asignatura codAsig="BBDD" horaInicio="12:15">Bases de Datos</asignatura>
+	</dia>
+	<dia nDia="Jueves">
+		<asignatura codAsig="SINF" horaInicio="8:30">Sistemas Informáticos</asignatura>
+		<asignatura codAsig="PROG" horaInicio="10:10">Programación</asignatura>
+		<asignatura codAsig="LMSGI" horaInicio="12:15">Lenguajes de Marcas</asignatura>
+	</dia>
+	<dia nDia="Viernes">
+		<asignatura codAsig="EDD" horaInicio="8:30">Entornos de Desarrollo</asignatura>
+		<asignatura codAsig="BBDD" horaInicio="9:20">Bases de Datos</asignatura>
+		<asignatura codAsig="FOL" horaInicio="11:25">Formación y Orientación Laboral</asignatura>
+		<asignatura codAsig="SINF" horaInicio="12:15">Sistemas Informáticos</asignatura>
+	</dia>
+</horario>

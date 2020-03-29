@@ -1,0 +1,24 @@
+/*
+ Autor.- Susana Fabián Antón
+ Fecha.- 14/11/19
+ Ejercicio.- UD2_08
+ Documento.- estilo2.css
+*/
+#abuelo:before{content:"Estilo 2"}
+div a{
+	background-color:#009CDE;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+div div div a{
+	background-color:#FF0000;
+	color:yellow;
+	text-decoration:none;
+}
+/*
+ El elemento "a" tendrá color de texto amarilo y color de fondo rojo, 
+ porque la segunda regla es más específica para este elemento.
+*/
+
+
+

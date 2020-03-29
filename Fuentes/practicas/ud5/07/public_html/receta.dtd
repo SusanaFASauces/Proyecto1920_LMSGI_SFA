@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Autor.- Susana Fabián Antón
+Fecha.- 26/03/2020
+Documento.- receta.dtd
+-->
+
+<!-- Elementos -->
+<!-- Los elementos descripcion e instrucciones son opcionales -->
+<!ELEMENT receta (nombre, descripcion*, tiempo, ingredientes, instrucciones*)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT instrucciones (paso+)>
+
+<!ELEMENT ingrediente (nombre, cantidad?)>
+<!ELEMENT paso (#PCDATA)>
+
+<!ELEMENT cantidad (#PCDATA)>
+
+<!-- Atributos -->
+<!-- Plato es un atributo obligatorio que puede contener uno de los valores especificados -->
+<!ATTLIST receta plato (primero|segundo|postre) #REQUIRED>
+<!ATTLIST receta xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST receta xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+
+<!ATTLIST tiempo preparacion CDATA #REQUIRED>
+<!ATTLIST tiempo coccion CDATA #IMPLIED>
+
+<!ATTLIST cantidad unidad (gramos|pizca|mililitros|cucharada|chorro) #IMPLIED>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 20/01/2020
+ Documento.- 02.xml
+-->
+<!DOCTYPE mundo [
+	<!ELEMENT continente (nCont, pais+)>
+	<!ELEMENT nCont (#PCDATA)>
+	<!ELEMENT pais (nPais, capital)>
+	<!ELEMENT nPais (#PCDATA)>
+	<!ELEMENT capital (nCap)>
+	<!ELEMENT nCap (#PCDATA)>
+	<!ELEMENT mundo (continente+)>
+	
+	<!ATTLIST mail xmlns:xsi CDATA #IMPLIED>
+	<!ATTLIST mail xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+]>
+
+<mundo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schemas/02.xsd">
+	<continente>
+		<nCont>Europa</nCont>
+		<pais>
+			<nPais>Alemania</nPais>
+			<capital>
+				<nCap>Berlín</nCap>
+			</capital>
+		</pais>
+	</continente>
+	<continente>
+		<nCont>América</nCont>
+		<pais>
+			<nPais>Argentina</nPais>
+			<capital>
+				<nCap>Buenos Aires</nCap>
+			</capital>
+		</pais>
+		<pais>
+			<nPais>Bahamas</nPais>
+			<capital>
+				<nCap>Nassau</nCap>
+			</capital>
+		</pais>
+	</continente>
+	<continente>
+		<nCont>Asia</nCont>
+		<pais>
+			<nPais>Afganistán</nPais>
+			<capital>
+				<nCap>Kabul</nCap>
+			</capital>
+		</pais>
+		<pais>
+			<nPais>Arabia Saudita</nPais>
+			<capital>
+				<nCap>Riad</nCap>
+			</capital>
+		</pais>
+	</continente>
+</mundo>

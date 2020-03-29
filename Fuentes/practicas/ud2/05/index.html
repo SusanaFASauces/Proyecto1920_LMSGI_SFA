@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 28/10/19
+ Ejercicio.- UD2_05
+ Documento.- index.html
+-->
+<html lang="es">
+	<head>
+		<title>HTML 05 Susana Fabián Antón</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Susana Fabián Antón">
+        <meta name="application-name" content="HTML 05">
+		<meta name="description" content="Introducción a HTML5">
+        <meta name="robots" content="index, follow">
+		
+		<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center">FORMULARIO CONSTELACIONES</h1>
+		</header>
+		<main>
+			<form action="#" method="get">
+			<fieldset>
+					<legend>Inicio de Sesión</legend>
+					<div>
+						<label for="LblUser">Nombre de Usuario</label>
+						<input type="text" id="LblUser" name="user" placeholder="8 carácteres máximo" maxlength="8" pattern="[A-Za-z0-9]{1,8}" title="El nombre de usuario no coincide con el formato requerido" required>
+					</div>
+					<div>
+						<label for="LblPass">Contraseña</label>
+						<input type="password" id="LblPass" name="password" placeholder="Introduce tu contraseña" title="La contraseña no coincide con el formato requerido" required>
+					</div>
+					<div>
+						<label for="LblCorreo">Correo Electrónico</label>
+						<input type="email" id="LblCorreo" name="correo" placeholder="example@gmail.com" title="El correo electrónico no coincide con el formato requerido" required>
+					</div>
+					<div>
+						<label for="LblTel">Télefono</label>
+						<input type="tel" id="LblTel" name="telefono" placeholder="000-00-00-00" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" title="El teléfono no coincide con el formato requerido" required>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Datos de la Constelación</legend>
+					<div>
+						<label for="LblEsp">Nombre en Español</label>
+						<input type="text" id="LblEsp" name="esp" placeholder="Osa Mayor">
+					</div>
+					<div>
+						<label for="LblLat">Nombre en Latín</label>
+						<input type="text" id="LblLat" name="lat" placeholder="Ursa Maior">
+					</div>
+					<div>
+						<label for="LblSuperficie">Superficie</label>
+						<input type="text" id="LblSuperficie" name="superficie" placeholder="1279,7 grados cuadrados">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Estrellas</legend>
+					<div>
+						<label for="LblNum_estrellas">Nº de Estrellas</label>
+						<input type="text" id="LblNum_estrellas" name="num_estrellas" placeholder="209">
+					</div>
+					<div>
+						<label for="LblAsterismo">Asterismo Principal</label>
+						<input type="text" id="LblAsterismo" name="asterismo" placeholder="7">
+					</div>
+					<fieldset>
+				
+						<legend>Estrella más Brillante</legend>
+						<div>
+							<label for="LblNom_estrella">Nombre de la Estrella</label>
+							<input type="text" id="LblNom_estrella" name="nom_estrella" placeholder="Alioth">
+						</div>
+						<div>
+							<label for="LblIntensidad">Intensidad del Brillo</label>
+							<input type="range" id="LblIntensidad" name="intensidad" list="valores" min="1" max="10" step="1" value="5">
+							<datalist id="valores">
+								<option value="1" label="1">
+								<option value="2" label="2">
+								<option value="3" label="3">
+								<option value="4" label="4">
+								<option value="5" label="5">
+								<option value="6" label="6">
+								<option value="7" label="7">
+								<option value="8" label="8">
+								<option value="9" label="9">
+								<option value="10" label="10">
+							</datalist>
+						</div>
+					</fieldset>
+				</fieldset>
+				<fieldset>
+					<legend>Objetos de Cielo Profundo</legend>
+					<div>
+						<label for="LblCumulos">
+						<input type="checkbox" id="LblCumulos" name="cumulos" value="si">Cúmulos
+						</label>
+					</div>
+					<div>
+						<label for="LblNebulosas">
+						<input type="checkbox" id="LblNebulosas" name="nebulosas" value="si" checked>Nebulosas
+						</label>
+					</div>
+					<div>
+						<label for="LblGalaxias">
+						<input type="checkbox" id="LblGalaxias" name="galaxias" value="si" checked>Galaxias
+						</label>
+					</div>
+					<div>
+						<label for="LblCuasares">
+						<input type="checkbox" id="LblCuasares" name="cuasares" value="si">Cuásares
+						</label>
+					</div>
+					<div>
+						<label for="LblMet">
+						<input type="checkbox" id="LblMet" name="met" value="si" checked>Lluvias de Meteoros
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Observación</legend>
+					<div>
+						<label for="LblNorte">Hemisferio Norte</label>
+							<input type="radio" id="LblNorte" name="hem" value="N" checked>
+					</div>
+					<div>
+						<label for="LblSur">Hemisferio Sur</label>
+						<input type="radio" id="LblSur" name="hem" value="S">
+					</div>
+					<div>
+						<label for="LblMes">Mejor Mes</label>
+						<select id="LblMes" name="mes">
+							<option value="enero">Enero</option>
+							<option value="febrero">Febrero</option>
+							<option value="marzo">Marzo</option>
+							<option value="abril" selected>Abril</option>
+							<option value="mayo">Mayo</option>
+							<option value="junio">Junio</option>
+							<option value="julio">Julio</option>
+							<option value="agosto">Agosto</option>
+							<option value="septiembre">Septiembre</option>
+							<option value="octubre">Octubre</option>
+							<option value="noviembre">Noviembre</option>
+							<option value="diciembre">Diciembre</option>
+						</select>
+					</div>
+					<div>
+						<label for="LblHora">Mejor Hora</label>
+						<input type="time" id="LblHora" name="hora" value="21:00">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Mitología y Ficción</legend>
+					<label for="LblHistoria">Historia Mitológica</label>
+					<br>
+					<textarea id="LblHistoria" name="historia" rows="8" cols="45" placeholder="Según la mitología griega, la historia de las osas está asociada al mito de Calisto. Fue la diosa Hera quien colocó las osas en el cielo. Celosa de ellas, las situó en el norte, lejos del horizonte del mar, donde se bañaban acompañante Zeus."></textarea>
+				</fieldset>
+				<fieldset>
+					<legend>Otros Datos</legend>
+					<label for="LblDatos">Información Adicional</label>
+					<br>
+					<textarea id="LblDatos" name="datos" rows="8" cols="45" placeholder="En esta constelación podemos observar Mizar y Alcor, que forman una estrella doble óptica, de las más reconocidas en el firmamento nocturno."></textarea>
+				</fieldset>
+				<input type="submit">
+				<input type="reset">
+			</form>
+		</main>
+		<footer>
+		<p> 2019-20 IES LOS SAUCES. © Todos los Derechos Reservados. <b>Susana Fabián Antón</b></p>
+		</footer>
+	</body>
+</html>

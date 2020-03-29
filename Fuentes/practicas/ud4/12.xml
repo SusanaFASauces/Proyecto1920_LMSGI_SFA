@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="estilo.css"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 28/01/2020
+ Documento.- 12.xml
+-->
+<!DOCTYPE textos [
+	<!ELEMENT texto (#PCDATA)>
+	<!ENTITY escritor "Miguel de Cervantes">
+	<!ENTITY obra "El Quijote">
+	<!ENTITY fecha "25/09/1947">
+	<!ELEMENT textos (texto+)>
+]>
+
+<textos>
+	<texto>&obra; fue escrito por &escritor;</texto>
+	<texto>&escritor; nació el &fecha;</texto>
+</textos>

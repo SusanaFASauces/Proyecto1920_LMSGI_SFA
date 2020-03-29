@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 18/03/2020
+ Documento.- 04.xsd
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- Tipos Simples -->
+	<xs:simpleType name="tipoNivel">
+		<!-- tipoNivel es un tipo simple que toma los valores "adultos" o "infantil" -->
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="adultos"/>
+			<xs:enumeration value="infantil"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tipoIntensidad">
+		<!-- tipoIntensidad es un tipo simple que toma uno de los siguientes valores: "suave", "moderada" o "fuerte" -->
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="suave"/>
+			<xs:enumeration value="moderada"/>
+			<xs:enumeration value="fuerte"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Elementos -->
+	
+	<!-- Elemento raiz “actividades”. -->
+	<xs:element name="actividades">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- El elemento “actividades” contiene 0 a 20 elementos “actividad”. -->
+				<xs:element name="actividad" minOccurs="0" maxOccurs="20">
+					<xs:complexType>
+						<!-- El elemento “actividad” consta de los siguientes elementos: codigo, titulo, fecha_inicio y sesiones. -->
+						<xs:sequence>
+							<!-- El elemento “código” es una cadena de tres caracteres, una letra mayúscula y dos dígitos numéricos. -->
+							<xs:element name="codigo">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="3"/>
+										<xs:pattern value="[A-Z][0-9][0-9]"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<!-- El elemento “titulo” es alfanumérico. -->
+							<xs:element name="titulo" type="xs:string"/>
+							<!-- El elemento “fecha_inicio” es de tipo fecha. -->
+							<xs:element name="fecha_inicio" type="xs:date"/>
+							<!-- El elemento “sesiones” consta de una o más sesiones. -->
+							<xs:element name="sesiones">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="sesion" maxOccurs="unbounded">
+											<xs:complexType>
+												<!-- El elemento “sesion” consta de: minutos_sesion y sesiones_semana.  -->
+												<xs:sequence>
+													<!-- El elemento “minutos_sesion” máximo valor 120 minutos y por defecto 60 minutos. -->
+													<xs:element name="minutos_sesion" default="60">
+														<xs:simpleType>
+															<xs:restriction base="xs:short">
+																<xs:maxInclusive value="120"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<!-- El elemento “sesiones_semana” mínimo valor es 1 y la máxima 3 horas. -->
+													<xs:element name="sesiones_semana">
+														<xs:simpleType>
+															<xs:restriction base="xs:short">
+																<xs:minInclusive value="1"/>
+																<xs:maxInclusive value="3"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<!-- El elemento “sesiones” tiene un atributo “intensidad”,  posee uno de los siguientes valores: suave, moderada y fuerte, siendo el elemento opcional -->
+									<xs:attribute name="intensidad" type="tipoIntensidad" use="optional"/>
+								</xs:complexType>	
+							</xs:element>
+						</xs:sequence>
+						<!-- El elemento “actividad” posee un atributo “nivel” de tipo alfanumérico, con dos posibles valores: infantil o adultos. -->
+						<xs:attribute name="nivel" type="tipoNivel"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

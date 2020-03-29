@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 10/11/19
+ Ejercicio.- UD2_07
+ Documento.- index.html
+-->
+<html>
+    <head>
+        <title>HTML 07 Susana Fabián Antón</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Susana Fabián Antón">
+        <meta name="application-name" content="HTML 07">
+		<meta name="description" content="Introducción a HTML5">
+        <meta name="robots" content="index, follow"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" title="Default style">
+		<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    </head>
+	<body>
+		<header>
+			<h1>MAPA DE IMAGEN: Constelaciones</h1>
+		</header>
+		<main>
+			<section>
+				<h3>Mapa Estelar</h3>
+				<div>
+					<p>Puedes hacer click en alguna estas constelaciones en el mapa para obtener más información sobre ellas:<br>
+					<i>&nbsp;Cassioppeia<br>&nbsp;Cepheus<br>&nbsp;Leo<br>&nbsp;Osa Menor<br>&nbsp;Perseus</i></p>
+				</div>
+				<div>
+<!-- Insertamos una imagen que asociaremos al mapa "mapa_estelar" mediante un atributo "usemap". -->
+					<img src="images/mapa_estelar.jpg" alt="Mapa estelar" usemap="#mapa_estelar">
+<!-- Creamos un mapa "mapa_estelar" -->
+					<map name="mapa_estelar">
+<!-- Dentro de nuestro mapa, creamos etiquetas "area" para diferenciar las distintas zonas. Cada area contendrá los atributos href, shape, coords y alt.  -->
+						<area href="https://es.wikipedia.org/wiki/Casiopea_(constelaci%C3%B3n)" shape="rect" coords="170,370,240,420" alt="Cassiopea">
+						<area href="https://es.wikipedia.org/wiki/Perseo_(constelaci%C3%B3n)" shape="rect" coords="210,272,268,363" alt="Perseo">
+						<area href="https://es.wikipedia.org/wiki/Cefeo_(constelaci%C3%B3n)" shape="poly" coords="177,464,207,502,245,487,268,440,205,442" alt="Cefeo">
+						<area href="https://es.wikipedia.org/wiki/Leo_(constelaci%C3%B3n)" shape="poly" coords="455,326,576,368,515,260" alt="Leo">
+						<area href="https://es.wikipedia.org/wiki/Osa_Menor" shape="circle" coords="313,474,40" alt="Osa Menor">
+					</map>
+				</div>
+			</section>
+		</main>
+		<footer>
+		<p> 2019-20 IES LOS SAUCES. © Todos los Derechos Reservados. <b>Susana Fabián Antón</b></p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Autor.- Susana Fabián Antón
+ Fecha.- 11/02/2020
+ Documento.- 04.xml
+-->
+<!DOCTYPE mail [
+	<!ELEMENT mail (fecha, remitente, destinatario, asunto?, mensaje, adjuntos)>
+	
+	<!ELEMENT remitente (#PCDATA)>
+	<!ELEMENT destinatario (correo+)>
+	<!ELEMENT asunto (#PCDATA)>
+	<!ELEMENT mensaje (#PCDATA)>
+	<!ELEMENT adjuntos (image*)>
+	
+	<!ELEMENT correo (#PCDATA)>
+	<!ELEMENT image (tipo, nombre)>
+	
+	<!ELEMENT nombre (#PCDATA)>
+	
+	<!ATTLIST mail xmlns:xsi CDATA #IMPLIED>
+	<!ATTLIST mail xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+	<!ATTLIST mail fecha CDATA #REQUIRED>
+	
+	<!ATTLIST image tipo (png|jpg) #REQUIRED>
+]>
+<mail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schemas/04.xsd" fecha="2020-01-14">
+	<remitente>marodriguezn@educa.jcyl.es</remitente>
+	<destinatario>
+		<correo>eduardo@educa.jcyl.es</correo>
+		<correo>maria@educa.jcyl.es</correo>
+	</destinatario>
+	<asunto>Fiesta de fin de curso</asunto>
+	<mensaje> A las 20:00 en ...</mensaje>
+	<adjuntos>
+		<image tipo="png">foto1.png</image>
+		<image tipo="png">foto2.png</image>
+	</adjuntos>
+</mail>
