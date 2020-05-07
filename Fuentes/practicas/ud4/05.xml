@@ -4,19 +4,7 @@
  Fecha.- 20/01/2020
  Documento.- 05.xml
 -->
-<!DOCTYPE mundo [
-	<!ELEMENT mundo (continente+)>
-	
-	<!ELEMENT continente (nCont?, pais*)>
-	
-	<!ELEMENT nCont (#PCDATA)>
-	<!ELEMENT pais (#PCDATA)>
-	
-	<!ATTLIST mundo xmlns:xsi CDATA #IMPLIED>
-	<!ATTLIST mundo xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
-	
-	<!ATTLIST pais capital CDATA #REQUIRED>
-]>
+ 
 
 <mundo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="schemas/05.xsd">
